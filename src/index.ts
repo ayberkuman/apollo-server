@@ -56,6 +56,7 @@ app.use(cors({
   ],
   credentials: true,
 }));
+app.options('*', cors());
 app.use('/graphql', bodyParser.json(), expressMiddleware(apolloServer));
 
 httpServer.listen(port, () => {
