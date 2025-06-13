@@ -1,8 +1,5 @@
-import { Prisma, status_enum as TaskStatus, Tasks as Task } from "./generated/prisma/index.js";
-import { PrismaClient } from "@prisma/client";
+import { Prisma, PrismaClient, status_enum as TaskStatus } from "@prisma/client";
 import { pubsub, TASK_EVENTS } from "./lib/pubsub.js";
-
-
 
 const prisma = new PrismaClient();
 
