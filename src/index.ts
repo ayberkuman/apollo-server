@@ -50,7 +50,10 @@ const apolloServer = new ApolloServer({
 
 await apolloServer.start();
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: [
+    'http://localhost:5173',
+    'https://telegram-mini-app-c3cg.onrender.com'
+  ],
   credentials: true,
 }));
 app.use('/graphql', bodyParser.json(), expressMiddleware(apolloServer));
