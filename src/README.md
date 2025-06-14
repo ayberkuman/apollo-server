@@ -146,19 +146,3 @@ subscription {
   `https://apollo-server-cwzu.onrender.com/graphql`
 - **WebSocket (subscriptions):**
   `wss://apollo-server-cwzu.onrender.com/graphql`
-
----
-
-## 📝 Contributing
-
-1. Fork the repo
-2. Create your feature branch (`git checkout -b feature/foo`)
-3. Commit your changes (`git commit -am 'Add foo'`)
-4. Push to the branch (`git push origin feature/foo`)
-5. Create a new Pull Request
-
----
-
-## 📄 License
-
-MIT
